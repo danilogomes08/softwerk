@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Nav */
+
+#header {
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+#header div a {
+    color: #e2576a;
+    font-weight: bold;
+    font-size: 1.5rem;    
+}
+
+nav ul {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2576a;
+    margin-left: 20px;
+	display: block;
+}
+
+nav a:hover {
+    color: #f9556b;
+}
+
+/* main */
+
+.container {
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+main > div  p:nth-child(1) {
+    font-size: 0.75rem;
+    color: #e2576a
+}
+
+main > div div > p:nth-child(3) {
+    width: 50%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h1 > span{
+    color: #e2576a;
+}
+
+main > div div > p:nth-child(3) {
+    margin-bottom: 30px;
+    color: white;
+}
+
+main {
+    background-image: url(../imagens/bg01.png); /* center center */
+    background-size: cover;  
+    background-color: #f3f6ff;
+    height: 600px;
+    background-repeat: no-repeat;
+} 
+
+.main-content {
+    display: flex;
+    align-items: center;
+}
+
+main > div div > a:nth-child(even) {
+    background-color: #e2576a;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+main > div div > a:nth-child(odd) {
+    background-color: #0f308f;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 50px; 
+}
