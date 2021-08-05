@@ -53,7 +53,8 @@ nav a:hover {
     height: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
-    align-items: center; 
+    align-items: center;
+    display: flex;
 }
 
 .main-content div p:nth-child(1) {
@@ -81,7 +82,7 @@ h1 > span{
 }
 
 main {
-    background-image: url(../imagens/bg01.png); /* center center */
+    background-image: url(../imagens/bg02.png); /* center center */
     background-size: cover;  
     background-color: #f3f6ff;
     padding: 200px 0;
@@ -91,6 +92,7 @@ main {
 .main-content {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .main-content div a:nth-child(even) {
@@ -109,12 +111,13 @@ main {
 }
 
 .great-desing > div:nth-child(1) {
-    justify-content: space-between;
-    display: flex;
+    justify-content: space-between; 
     color: white;
     box-shadow: 0 10px 10px rgba(0,0,0, 0.2);
     background-color: #a6eed8;
     border-radius: 20px;
+    position: relative;
+    bottom: 125px;
 }
 
 .great-desing div > img {
@@ -133,4 +136,20 @@ main {
     font-weight: 900;
     font-size: 2rem;
     margin: 5px 0;
+}
+
+/* section icons */
+
+.great-desing div:nth-child(2) > div {
+    width: 200px;
+}
+
+.great-desing div:nth-child(2) {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.great-desing h2 {
+    color: #0f308f;
+    margin: 15px 0;
 }
