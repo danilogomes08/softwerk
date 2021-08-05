@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Atkinson Hyperlegible', sans-serif;
+    box-sizing: border-box;
 }
 
 a {
@@ -50,7 +51,6 @@ nav a:hover {
 
 .container {
     max-width: 950px;
-    height: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
@@ -138,6 +138,11 @@ main {
     margin: 5px 0;
 }
 
+.great-desing > div:nth-child(1) > div p:nth-child(1) {
+    font-size: 0.75rem;
+}
+
+
 /* section icons */
 
 .great-desing div:nth-child(2) > div {
@@ -194,6 +199,10 @@ main {
     margin: 20px 0;
 }
 
+.future > div > p:nth-child(1) {
+    font-size: 0.75rem;
+}
+
 .future > div > h2 {
     color: #0f308f;
     font-size: 2rem;
@@ -205,4 +214,52 @@ main {
 
 .future > div > p:nth-child(3) {
     color: #a8a9ab;
+}
+
+/* seção app*/
+
+.app {
+    justify-content: space-evenly;
+}
+
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.app-content p:nth-child(1) {
+    color: #0f308f;
+    font-weight: bold;
+}
+
+.app-content p:nth-child(2) {
+    color: #e2576a;
+}
+
+.app div h2 {
+    font-size: 2rem;
+    color: #0f308f;
+    margin-bottom: 20px;
+}
+
+.app div h2 span {
+    color: #e2576a;
+}
+
+.app > div > p {
+    font-size: 0.75rem;
+    color: #e2576a;
+}
+
+/*seção com formulario */
+
+.bg-touch {
+    background-color: #f4f4f4;
+}
+
+.get-touch {
+    flex-direction: column;
+    padding-top: 100px;
 }
