@@ -328,7 +328,7 @@ main {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    color: #e2576a ;
+    color: #e2576a;
 }
 
 .process div p:first-child {
@@ -368,16 +368,89 @@ main {
     font-size: 1.2rem;
 }
 
+/* brands */
+
 .brands {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 100px auto;
+    margin: 70px auto;
+}
+
+/* footer */
+
+footer {
+    background-color: #0f308f;
+    font-size: 0.90rem;
+    color: white;
+    padding: 70px 0;
 }
 
 .footer {
     justify-content: space-between;
+    align-items: flex-start
 }
 
 .footer > div {
+    width: 200px;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+}
+
+.footer > div:nth-child(1) > p {
+    margin-bottom: 20px;
+}
+
+.social > img {
+    border-radius: 50px;
+}
+
+.social > img:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer li {
+    display: flex;
+	align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer li:nth-child(1)::before {
+    content: url(../imagens/contact01.png);
+    display: block;
+    margin-right: 10px;
+    width: 15px;
+	height: 15px;
+}
+
+.footer li:nth-child(2)::before {
+    content: url(../imagens/contact02.png);
+    display: block;
+    margin-right: 10px;
+    width: 15px;
+	height: 15px;
+}
+
+.footer li:nth-child(3)::before {
+    content: url(../imagens/contact03.png);
+    display: block;
+    margin-right: 10px;
+    width: 15px;
+	height: 15px;
+}
+
+.footer li:nth-child(4)::before {
+    content: url(../imagens/contact04.png);
+    display: block;
+    margin-right: 10px;
+    width: 15px;
+	height: 15px;
+}
+
+.footer input {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 0;
     width: 200px;
 }
