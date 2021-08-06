@@ -1,3 +1,5 @@
+/* configurações gerais */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -24,6 +26,15 @@ li {
 .smal-pink {
     font-size: 0.75rem;
     color: #e2576a;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #e2576a;
+    padding-left: 10px;
 }
 
 
@@ -216,6 +227,10 @@ main {
     justify-content: space-evenly;
 }
 
+.app > div {
+    align-items: center;
+}
+
 .app-content {
     display: flex;
     justify-content: space-between;
@@ -294,11 +309,6 @@ main {
     color: white;
     position: relative;
     right: 30px;
-}
-
-.get-touch > div > form > input::placeholder {
-    color: #e2576a;
-    padding-left: 10px;
 }
 
 .get-touch > div > img {
@@ -382,7 +392,7 @@ footer {
     background-color: #0f308f;
     font-size: 0.90rem;
     color: white;
-    padding: 70px 0;
+    padding: 5  0px 0;
 }
 
 .footer {
@@ -448,9 +458,84 @@ footer {
 	height: 15px;
 }
 
+footer form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
 .footer input {
     border-radius: 20px;
     border: none;
-    padding: 8px 0;
-    width: 200px;
+    padding: 5px 0;
+    width: 250px;
 }
+
+footer button {
+    background-color: #e2576a;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    right: 20px;
+}
+
+footer button img {
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+[data-menu="button"] {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .js [data-menu="button"] {
+      display: flex;
+      background-color: #e2576a;
+      border: none;
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      margin: 0 20px 10px 0;
+      align-items: center;
+      position: relative;
+      z-index: 300;
+    }
+    
+    .js [data-menu="button"]::before {
+      margin-right: 4px;
+      content: '';
+      display: inline-block;
+      height: 2px;
+      width: 12px;
+      background: #fff;
+      box-shadow: 0 4px #fff, 0 -4px #fff;
+      transition: transform .3s;
+    }
+  
+    .js [data-menu="button"].active::before {
+      transform: rotate(90deg);
+    }
+  
+    .js [data-menu="list"] {
+      display: none;
+      position: absolute;
+      background: white;;
+      width: 160px;
+      z-index: 200;
+      top: 40px;
+      right: 0;
+      padding: 60px 0 20px 0;
+      box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+      border-radius: 10px;
+    }
+    .js [data-menu="list"].active {
+      display: block;
+      animation: show-right .3s forwards;
+    }
+  }
