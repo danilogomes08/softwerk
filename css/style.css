@@ -377,12 +377,14 @@ main {
     padding-top: 100px;
 }
 
-.get-touch > div:nth-child(2) {
+.ideas-process {
     background-color:white;
     position: relative;
     top: 190px;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(0,0,0, 0.2);
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .get-touch > div:nth-child(1) {
@@ -420,11 +422,13 @@ main {
     right: 30px;
 }
 
-.get-touch > div > img {
+.ideas-process > img {
     border-radius: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.get-touch > div > div {
+.ideas-process > div {
     width: 40%;
     margin: 0 auto;
     color: #a8a9ab;
@@ -453,6 +457,23 @@ main {
 .process div p:first-child {
     font-size: 3rem;
     color: #0f308f;
+}
+
+@media (max-width: 1000px) {
+    .ideas-process {
+        max-width: 96%;
+    }
+
+    .ideas-process > div {
+        padding: 35px 0;
+        width: 90%;
+    }
+}
+    
+@media (max-width: 500px) {
+    .get-touch > div > form > input {
+        width: 250px;
+    }
 }
 
 /* seção team */
