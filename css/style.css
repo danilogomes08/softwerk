@@ -211,7 +211,7 @@ main {
 }
 
 .great-desing-cont > img {
-    max-width: 475px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -255,6 +255,7 @@ main {
     justify-content: space-between;
     text-align: center;
     color: #a8a9ab;
+    font-size: 0.96rem;
 }
 
 .great-desing h2 {
@@ -269,20 +270,20 @@ main {
 /* Future */
 
 .future {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #eff0f4;
     margin-bottom: 100px;
 }
 
 .future div:nth-child(2) {
-    width: 50%;
     margin-left: 60px;
 }
 
 .future img {
-    width: 50%;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 .future div {
@@ -309,6 +310,24 @@ main {
 
 .future > div > p:nth-child(3) {
     color: #a8a9ab;
+}
+
+@media (max-width: 1000px) { 
+    .future {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .future img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .future div:nth-child(2) {
+        padding: 100px 0;
+    }
+
 }
 
 /* seção app*/
