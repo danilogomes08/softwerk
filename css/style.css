@@ -249,6 +249,7 @@ main {
 
 .great-desing div:nth-child(2) > div {
     width: 200px;
+    margin: 20px 0;
 }
 
 .great-desing div:nth-child(2) {
@@ -516,6 +517,17 @@ main {
     margin: 70px auto;
 }
 
+@media (max-width: 800px) {
+    .brands {
+        flex-direction: column;
+    }
+    
+    .brands > img:not(.brands > img:first-child) {
+        margin-top: 50px;
+    }
+}
+
+
 /* footer */
 
 footer {
@@ -541,10 +553,6 @@ footer {
 
 .footer > div:nth-child(1) > p {
     margin-bottom: 20px;
-}
-
-.social > img {
-    border-radius: 50px;
 }
 
 .social > img:not(:first-child) {
@@ -616,3 +624,17 @@ footer button img {
     display: block;
 }
 
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h2 {
+        text-align: center;
+    }
+
+    .footer > div:not(.footer > div:first-child) {
+        margin-top: 30px;
+    }
+}
